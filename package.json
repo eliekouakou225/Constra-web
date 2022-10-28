@@ -1,7 +1,6 @@
 {
   "name": "constra",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:./css/main.css"
@@ -9,6 +8,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.2.2"
-  }
+    "bootstrap": "^5.2.2",
+    "bootstrap-icons": "^1.9.1"
+  },
+  "description": ""
 }
