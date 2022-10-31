@@ -1,0 +1,32 @@
+.navbar{
+    background-color: $color--primary-dark; 
+
+    a{
+        color: $color-white;
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-size: 14px;
+        &:hover{
+            color : $color--primary-yellow;
+        }
+    }
+    
+    .dropdown-menu{
+        background: $color-white;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        border-top: 2px solid $color--primary-yellow;
+        padding: 15px;
+        position: absolute;
+        top: 43px;
+}
+    .dropdown-item{
+        color: $color--text-light;
+        &:hover{
+            background-color: transparent ;
+        }
+    }
+}

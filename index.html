@@ -15,22 +15,329 @@
 
 <body>
 
-    <header>
-        <div class="container-fluid bg-secondary">
-            <div class="container " >
+    <header class="header position-relative">
+        <div class="container-fluid header__sociallink p-2 ">
+            <div class="container ">
                 <div class="row">
-                    <div class="cols"><i class="fa-solid fa-location-dot"></i></i>9051 Constra Incorporated,
-                        États-Unis<a href=""></a></div>
-                    <div class="cols text-danger">
-                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href=""><i class="fa-brands fa-twitter"></i></a>
-                        <a href=""><i class="fa-brands fa-instagram"></i></a>
-                        <a href=""><i class="fa-brands fa-github"></i></a>
+                    <div class="col-12 col-xl-8 ">
+                        <a href=""><i class="fa-solid fa-location-dot"></i> 9051 Constra Incorporated, États-Unis</a>
+                    </div>
+                    <div class="col-12 col-xl-4 text-center text-xl-end ">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="container mt-5 mb-2">
+            <div class="row">
+                <div class="col-xl-4 header__logo text-center">
+                    <a href="#"><img src="./images/logo.png" alt="Logo Constra" srcset=""></a>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-2 text-center">
+                    <p>Contact <br><span class="fw-bolder">(+255) 0 779 769 636</span></p>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-2 text-center">
+                    <p>Mail <br> <span class="fw-bolder">info@Constra.com</span></p>
+                </div>
+                <div class="col-12 col-xl-2 col-sm-6 text-center">
+                    <p>Global Certificate <br> <span class="fw-bolder">ISO 9001:2017</span></p>
+                </div>
+                <div class="col-12 col-xl-2 col-sm-6 text-center">
+                    <button class="btn fw-bold">Faire un Devis</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- --------------- nav ------------------->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand d-lg-none" href="#">Menu</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Page
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Nous contacter</a>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex">
+                        <div class="container h-100">
+                            <div class="d-flex justify-content-center h-100">
+                                <div class="searchbar">
+                                    <input class="search_input" type="text" name="" placeholder="Search...">
+                                    <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+                                </div>
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!------------------------ main carrousel --------------------->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/slider-main/bg1.jpg" class="d-block w-100" alt="principal background">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/slider-main/bg2.jpg" class="d-block w-100" alt="secondary background">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/slider-main/bg3.jpg" class="d-block w-100" alt="thrist background">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid align-btn d-none d-lg-flex">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"><i
+                            class="fa-solid fa-chevron-left"></i></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"><i
+                            class="fa-solid fa-chevron-right"></i></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="container h-auto position-absolute header__citation top-100 start-50 translate-middle p-4 ml-2 ">
+            <div class="">
+                <div class="row align-items-center">
+                    <div class="col-md-10">
+                        <h2 class="test">NOUS COMPRENONS VOS BESOINS EN MATIÈRE DE CONSTRUCTION</h2>
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn--dark">CITATION</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </header>
+
+    <section class="mt-5 position-relative aboutUs">
+        <div class="container mt-xl-5">
+            <div class="row pt-5">
+                <div class="col-12 md-12 col-xl-6">
+                    <p>À PROPOS DE NOUS</p>
+                    <h2>NOUS RÉALISONS DES PROJETS PHARES</h2>
+                    <p>Nous sommes une question réthorique courue sur sa joue Lorsqu'elle a atteint les premières
+                        collines des montagnes italiques, elle a eu une dernière vue sur l'horizon de sa ville natale
+                        Bookmarksgrove, le titre d'Alphabet Village et la sous-ligne de sa propre route, la Line Lane.
+                    </p>
+                    <div class="row aboutUs__container">
+                        <div class="col-12 lg-2 col-xl-6 aboutUs__group">
+                            <i class="fa-solid fa-trophy"></i>
+                            <p>NOUS AVONS LA RÉPUTATION D'EXCELLENCE</p>
+                        </div>
+                        <div class="col-12 md-2 col-xl-6 aboutUs__group">
+                            <i class="fa-solid fa-sliders"></i>
+                            <p>NOUS CONSTRUISONS DES PARTENARIATS</p>
+                        </div>
+                        <div class="col-12 md-6 col-xl-6 aboutUs__group">
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <p>GUIDÉ PAR L'ENGAGEMENT</p>
+                        </div>
+                        <div class="col-12  md-6 col-xl-6 aboutUs__group">
+                            <i class="fa-solid fa-people-group"></i>
+                            <p>UNE ÉQUIPE DE PROFESSIONNELS</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md-12 col-xl-6">
+                    <h2>NOS VALEURS</h2>
+                    <p>Esthétique de scène de lune de loup Minim Austin 3, amers umami odio pariatur. Pop-up occaecat
+                        taxidermie street art, barbe tatouée littéralement.
+                    </p>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed test" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    SECURITE
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                    demonstrate the <code>.accordion-flush</code> class. This is the first item's
+                                    accordion body.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed test" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    SERVICE CLIENT
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                    demonstrate the <code>.accordion-flush</code> class. This is the second item's
+                                    accordion body. Let's imagine this being filled with some actual content.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header " id="flush-headingThree">
+                                <button class="accordion-button collapsed test" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    INTEGRITE
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                    demonstrate the <code>.accordion-flush</code> class. This is the third item's
+                                    accordion body. Nothing more exciting happening here in terms of content, but just
+                                    filling up the space to make it look, at least at first glance, a bit more
+                                    representative of how this would look in a real-world application.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid bg-light mt-5">
+        <div class="container">
+            <div class="col-3">
+                <i class="fa-solid fa-house-building"></i>
+                <p>1789</p>
+                <p>PROJETS TOTAUX</p>
+            </div>
+            <div class="col-3">
+                <i class="fa-regular fa-user-helmet-safety"></i>
+                <p>647</p>
+                <p>LES MEMBRES DU PERSONNEL</p>
+            </div>
+            <div class="col-3">
+                <i class="fa-light fa-clock-eight"></i>
+                <p>1789</p>
+                <p>HEURE DE TRAVAIL</p>
+            </div>
+            <div class="col-3">
+                <i class="fa-light fa-globe"></i>
+                <p>1789</p>
+                <p>EXPERIENCE DES PAYS</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="./app/script.js"></script>
 
 </body>
 

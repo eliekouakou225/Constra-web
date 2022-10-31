@@ -1,0 +1,48 @@
+.btn{
+  @include btn-default;
+} 
+.btn--dark{
+  @include btn-default($color--text-dark, $color-white, #000, $color-white);
+} 
+//  ----------- search button
+
+
+// Button next and previous
+
+.align-btn{
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    top: 50%;
+    z-index: 1;
+  
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 70px;
+    height: 70px;
+    outline: 0;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 30px;
+    color: white;
+    transition: all 0.5s ease;
+    
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .carousel-control-prev,
+  .carousel-control-next {
+      transition: none;
+    }
+  }
+  .carousel-control-prev:hover, .carousel-control-prev:focus,
+  .carousel-control-next:hover,
+  .carousel-control-next:focus {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    background-color: #FFB600;
+    
+  }
+  

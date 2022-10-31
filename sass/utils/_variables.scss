@@ -6,6 +6,19 @@ $color--secondary-dark: #23282D;
 $color--text-light:#555;
 $color--text-dark: #212121;
 $color--grey:#F9F9F9;
+$color--grey-nav: #EBEBEB;
+$color-white: #fff;
 
 // FONT
-$default-font-size: 1.6rem;
+$default-font-size: 1rem;
+
+// BREAKPOINT
+
+
+$breakpoint-phone: 200px; // Normal phone
+$breakpoint-tablet: 768px; // tablet
+$breakpoint-pc: 1200px; // PC
+
+// @media (min-width: $breakpoint-tablet) {
+  
+// }

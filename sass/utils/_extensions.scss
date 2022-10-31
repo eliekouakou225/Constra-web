@@ -1,0 +1,12 @@
+// button next-previous
+
+%btn-next-prev{
+    color: $color-white;
+    font-weight: 900;
+    background-color: #21292C;
+    
+    &:hover{
+        background-color: $color--primary-yellow;
+    }
+
+}

@@ -1,0 +1,33 @@
+.header{
+    .header__sociallink{
+        background-color:$color--grey-nav;
+        a{
+            text-decoration: none;
+            color: $color--text-dark;
+            margin:10px;
+        }
+    }
+    .header__logo img{
+        width: 15vw;
+        height: auto;
+        @media(max-width:$breakpoint-tablet){
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+        }
+    }
+    &__citation{
+        background-color: $color--primary-yellow;
+        height: 14vh;
+        @media(min-width:$breakpoint-phone){
+            width: 90vw;
+        }
+        h2{
+            @include h2(1rem, $color-white)
+        }
+    }
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; // Permet de d'afficher les dropdown au hover
+ }
