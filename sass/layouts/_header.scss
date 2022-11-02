@@ -19,8 +19,10 @@
     &__citation{
         background-color: $color--primary-yellow;
         height: 14vh;
+        margin: 0 auto;
         @media(min-width:$breakpoint-phone){
             width: 90vw;
+            text-align: center;
         }
         h2{
             @include h2(1rem, $color-white)

@@ -112,10 +112,12 @@ h2 {
 .header__citation {
   background-color: #FFB600;
   height: 14vh;
+  margin: 0 auto;
 }
 @media (min-width: 200px) {
   .header__citation {
     width: 90vw;
+    text-align: center;
   }
 }
 .header__citation h2 {
@@ -160,20 +162,21 @@ h2 {
   background-color: transparent;
 }
 
-.aboutUs__container {
+.aboutUs__left {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 3rem;
+  justify-content: space-between;
 }
 
 .aboutUs__group {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: no-wrap;
 }
 .aboutUs__group i {
-  font-size: 3rem;
+  font-size: 40px;
   color: #FFB600;
   margin-right: 10px;
 }
@@ -181,13 +184,21 @@ h2 {
   font-weight: 600;
   line-height: 2;
 }
-@media (min-width: 200px) {
-  .aboutUs__group {
-    max-width: 200px;
-  }
-  .aboutUs__group i {
-    font-size: 10vw;
-  }
+
+.accordion .accordion-button {
+  border: 0.1px solid rgba(0, 0, 0, 0.3);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.accordion .accordion-button:not(.collapsed) {
+  color: #FFB600;
+  background-color: transparent;
+  box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+.accordion .accordion-collapse {
+  border-bottom: 0.1px solid rgba(0, 0, 0, 0.3);
+  border-left: 0.1px solid rgba(0, 0, 0, 0.3);
+  border-right: 0.1px solid rgba(0, 0, 0, 0.3);
 }
 
 /*# sourceMappingURL=main.css.map */
