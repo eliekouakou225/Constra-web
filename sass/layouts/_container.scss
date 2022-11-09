@@ -41,3 +41,147 @@
     }
 }
 
+// ---------Skill--------------------------
+.skill{
+    @extend %d-flex;
+    justify-content: space-between;
+  }
+  .skill__container{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    width: 150px;
+
+    i{
+        color: $color--primary-yellow;
+        font-size: 2.5rem;
+        text-align: center;
+      }
+
+      .skill__num{
+        color: #fff;
+        text-align: center;
+        font-weight: 600;
+        font-size: 3rem;
+      }
+    .skill__text{
+        color: $color--primary-yellow;
+        font-weight: 600;
+        font-size: 1em;
+        text-align: center;
+        font-weight: 600;
+      }
+    
+}
+ 
+.OurServices__group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+
+   h3{
+   font-size: 1rem;
+   font-weight: 600;
+
+      &:hover{
+        color: $color--primary-yellow;
+        cursor: pointer;
+      }
+  }
+  i{
+      font-size: 5rem;
+      color: $color--primary-yellow;
+      margin-right: 10px;
+  }
+  p{
+      font-weight: 300;
+      line-height: 1.5;
+      color: $color--text-light;
+  }
+
+}
+.OurServices__img{
+    img{
+        width: 400px;
+        height: auto;
+       
+    }
+    @media(max-width:$breakpoint-phone){
+        width: 400rem;
+        border: 2px solid red;
+    }
+
+}
+
+
+
+// -------ONGLET--------
+
+.recentProjet_bg{
+    background-color: $color--grey;
+}
+.recentProjet{
+    text-align: center;
+
+    input{
+        display: none;
+    }
+
+    .recentProjet__label{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0;
+        color: $color--primary-dark;
+        border-bottom: 2px solid $color--primary-yellow;
+       
+    }
+    .recentProjet__tag{
+        font-size: 1rem;
+        display: inline-block;
+        color: black;
+        cursor: pointer;
+        text-transform: uppercase;
+        padding: 10px;
+
+    }
+    .recentProjet__images{
+        img{
+            width: 350px;
+            height: 350px;
+            margin: -5px;
+            transition: all .2s ease;
+            -webkit-transition: all .2s ease;
+            -moz-transition: all .2s ease;
+            -ms-transition: all .2s ease;
+            -o-transition: all .2s ease;
+            
+        }
+    }
+    
+}
+
+/* filter css*/
+
+#commercial:checked ~ .recentProjet__images > img:not([class *="commercial"]),
+#education:checked ~ .recentProjet__images > img:not([class *="education"]),
+#Gouvernment:checked ~ .recentProjet__images > img:not([class *="Gouvernment"]),
+#infrastructure:checked ~ .recentProjet__images > img:not([class *="infrastructure"]),
+#residential:checked ~ .recentProjet__images > img:not([class *="residential"]),
+#healtcare:checked ~ .recentProjet__images > img:not([class *="healtcare"]){
+    width: 0px;
+    height: 0px;
+}
+
+
+#all:checked ~ .recentProjet__label .all,
+#commercial:checked ~ .recentProjet__label .commercial,
+#education:checked ~ .recentProjet__label .education,
+#Gouvernment:checked ~ .recentProjet__label .Gouvernment,
+#infrastructure:checked ~ .recentProjet__label .infrastructure,
+#residential:checked ~ .recentProjet__label .residential,
+#healtcare:checked ~ .recentProjet__label .healtcare{
+    background-color: $color--primary-yellow;
+    color:$color--text-dark;  
+
+}

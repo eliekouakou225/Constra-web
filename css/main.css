@@ -1,5 +1,10 @@
-@import url("https://fonts.googleapis.com/css2? famille= Montserrat:wght@200;500;900 & display=swap");
-@import url("https://fonts.googleapis.com/css2? family= Montserrat:wght@200;500;900 & family= Open+Sans:ital,wght@0,300;0,500;0,800;1,500 & display=swap");
+@import url("https://fonts.googleapis.com/css2? family= Montserrat:wght@100;200;300;400;500;600;700;800 & family= Open+Sans:ital, wght@0,300;0,500;0,800;1,500 & display=swap");
+.skill {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
@@ -199,6 +204,129 @@ h2 {
   border-bottom: 0.1px solid rgba(0, 0, 0, 0.3);
   border-left: 0.1px solid rgba(0, 0, 0, 0.3);
   border-right: 0.1px solid rgba(0, 0, 0, 0.3);
+}
+
+.skill {
+  justify-content: space-between;
+}
+
+.skill__container {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  width: 150px;
+}
+.skill__container i {
+  color: #FFB600;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.skill__container .skill__num {
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  font-size: 3rem;
+}
+.skill__container .skill__text {
+  color: #FFB600;
+  font-weight: 600;
+  font-size: 1em;
+  text-align: center;
+  font-weight: 600;
+}
+
+.OurServices__group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+}
+.OurServices__group h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.OurServices__group h3:hover {
+  color: #FFB600;
+  cursor: pointer;
+}
+.OurServices__group i {
+  font-size: 5rem;
+  color: #FFB600;
+  margin-right: 10px;
+}
+.OurServices__group p {
+  font-weight: 300;
+  line-height: 1.5;
+  color: #555;
+}
+
+.OurServices__img img {
+  width: 400px;
+  height: auto;
+}
+@media (max-width: 200px) {
+  .OurServices__img {
+    width: 400rem;
+    border: 2px solid red;
+  }
+}
+
+.recentProjet_bg {
+  background-color: #F9F9F9;
+}
+
+.recentProjet {
+  text-align: center;
+}
+.recentProjet input {
+  display: none;
+}
+.recentProjet .recentProjet__label {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  color: #272d33;
+  border-bottom: 2px solid #FFB600;
+}
+.recentProjet .recentProjet__tag {
+  font-size: 1rem;
+  display: inline-block;
+  color: black;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 10px;
+}
+.recentProjet .recentProjet__images img {
+  width: 350px;
+  height: 350px;
+  margin: -5px;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
+
+/* filter css*/
+#commercial:checked ~ .recentProjet__images > img:not([class*=commercial]),
+#education:checked ~ .recentProjet__images > img:not([class*=education]),
+#Gouvernment:checked ~ .recentProjet__images > img:not([class*=Gouvernment]),
+#infrastructure:checked ~ .recentProjet__images > img:not([class*=infrastructure]),
+#residential:checked ~ .recentProjet__images > img:not([class*=residential]),
+#healtcare:checked ~ .recentProjet__images > img:not([class*=healtcare]) {
+  width: 0px;
+  height: 0px;
+}
+
+#all:checked ~ .recentProjet__label .all,
+#commercial:checked ~ .recentProjet__label .commercial,
+#education:checked ~ .recentProjet__label .education,
+#Gouvernment:checked ~ .recentProjet__label .Gouvernment,
+#infrastructure:checked ~ .recentProjet__label .infrastructure,
+#residential:checked ~ .recentProjet__label .residential,
+#healtcare:checked ~ .recentProjet__label .healtcare {
+  background-color: #FFB600;
+  color: #212121;
 }
 
 /*# sourceMappingURL=main.css.map */
