@@ -8,7 +8,6 @@
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
-    border: 1px solid red;
     &:hover{
         background-color:$bg-hover;
         color: $hover-color;
@@ -29,4 +28,8 @@
     font-size: $font-size;
     line-height: 1.5;
     color: $color-text ;
+}
+
+@mixin border($color-border) {
+    border: 2px solid $color-border;
 }

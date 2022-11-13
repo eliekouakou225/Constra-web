@@ -1,15 +1,18 @@
 // ABOUT US SECTION
-.aboutUs__left{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 3rem;
-    justify-content: space-between; 
+ .aboutUs__left{
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     margin-top: 3rem;
+//     justify-content: space-between; 
+@include border(grey);
 }
 .aboutUs__group {
     display: flex;
     flex-direction: row;
     flex-wrap: no-wrap;
+    border: 1px solid red;
+    margin-bottom: 10px;
    
     i{
         font-size: 40px;
@@ -19,6 +22,7 @@
     p{
         font-weight: 600;
         line-height: 2;
+        
     }
 
 }
@@ -43,14 +47,15 @@
 
 // ---------Skill--------------------------
 .skill{
-    @extend %d-flex;
-    justify-content: space-between;
+    // @extend %d-flex;
+    // justify-content: space-between;
+    color: red;
+
   }
   .skill__container{
     display: flex;
     flex-direction: column;
     font-size: 16px;
-    width: 150px;
 
     i{
         color: $color--primary-yellow;
@@ -73,7 +78,7 @@
       }
     
 }
- 
+//  ------------------------------------
 .OurServices__group {
   display: flex;
   flex-direction: row;
@@ -117,71 +122,279 @@
 
 // -------ONGLET--------
 
-.recentProjet_bg{
-    background-color: $color--grey;
-}
+
 .recentProjet{
-    text-align: center;
+    margin: 100px auto;
+    max-width: 1100px;
+}
+nav .items{
+   display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80vw;
+    margin: 0 auto;
+    justify-content: space-between;
+    border: 2px solid $color--primary-yellow;
 
-    input{
-        display: none;
-    }
+}
+nav .items .item{
+    padding: 10px 25px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: $color--text-dark;
+    cursor: pointer;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
 
-    .recentProjet__label{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin: 0;
-        color: $color--primary-dark;
-        border-bottom: 2px solid $color--primary-yellow;
-       
+nav .items .active,
+nav .items .item:hover{
+   color: #fff;
+   background: $color--primary-yellow;
+}
+.gallery{
+   display: flex;
+   flex-wrap: wrap;
+   margin-top: 30px;
+}
+.gallery .image{
+    width: calc(100% / 3);
+    position: relative;
+}
+.gallery .image.hide{
+   display: none;
+}
+.gallery .image.show{
+   display: block;
+   animation: animate .4s ease;
+   -webkit-animation: animate .4s ease;
+}
+@keyframes animate{
+   0%{
+       transform: scale(0.5);
+       -webkit-transform: scale(0.5);
+       -moz-transform: scale(0.5);
+       -ms-transform: scale(0.5);
+       -o-transform: scale(0.5);
+   }
+   100%{
+       transform: scale(1);
+       -webkit-transform: scale(1);
+       -moz-transform: scale(1);
+       -ms-transform: scale(1);
+       -o-transform: scale(1);
+   }
+}
+.gallery .image span{
+   display: flex;
+   width: 100%;
+   overflow: hidden;
+}
+.gallery .image img{
+   width: 100%;
+   vertical-align: middle;
+   transition: all .3s ease;
+   -webkit-transition: all .3s ease;
+   -moz-transition: all .3s ease;
+   -ms-transition: all .3s ease;
+   -o-transition: all .3s ease;
+}
+.gallery .image:hover img{
+   transform: scale(1.1);
+   -webkit-transform: scale(1.1);
+   -moz-transform: scale(1.1);
+   -ms-transform: scale(1.1);
+   -o-transform: scale(1.1);
+   filter: brightness(40%);
+   -webkit-filter: brightness(40%);
+}
+.preview-box{
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%) scale(0.9);
+   background:#fff;
+   max-width: 600px;
+   border: 2px solid red;
+   width: 100%;
+   border-radius: 3px;
+   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+   -webkit-transform: translate(-50%, -50%) scale(0.9);
+   -moz-transform: translate(-50%, -50%) scale(0.9);
+   -ms-transform: translate(-50%, -50%) scale(0.9);
+   -o-transform: translate(-50%, -50%) scale(0.9);
+   padding: 0 5px 5px 5px;
+   z-index: 5;
+   opacity: 0;
+   pointer-events: none;
+}
+.preview-box.show{
+   opacity: 1;
+   pointer-events: auto;
+   transform: translate(-50%, -50%) scale(1);
+   -webkit-transform: translate(-50%, -50%) scale(1);
+   -moz-transform: translate(-50%, -50%) scale(1);
+   -ms-transform: translate(-50%, -50%) scale(1);
+   -o-transform: translate(-50%, -50%) scale(1);
+}
+.preview-box .details{
+   display: flex;
+   align-items: center;
+   padding: 13px 15px 13px 10px;
+   justify-content: space-between;
+}
+.preview-box .details .title{
+   display: flex;
+   font-weight: 400;
+   font-size: 18px;
+}
+.details .title p{
+   margin-left: 5px;
+   font-weight: 500;
+}
+.details .icon{
+   color: #ff0000;
+   font-style: 22px;
+   cursor: pointer;
+}
+.preview-box .image-box{
+   display: flex;
+   width: 100%;
+}
+.image-box img{
+   width: 100%;
+   border-radius: 0 0 3px 3px;
+   -webkit-border-radius: 0 0 3px 3px;
+   -moz-border-radius: 0 0 3px 3px;
+   -ms-border-radius: 0 0 3px 3px;
+   -o-border-radius: 0 0 3px 3px;
+}
+.shadow{
+   display: none;
+   position: fixed; 
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   z-index: 2;
+   background: rgba(0,0,0,0.4);
+}
+.shadow.show{
+   display: block;
+}
+@media(max-width:1000px){
+    .gallery .image{
+        width: calc(100% / 3);
     }
-    .recentProjet__tag{
-        font-size: 1rem;
-        display: inline-block;
-        color: black;
-        cursor: pointer;
-        text-transform: uppercase;
-        padding: 10px;
+}
+@media(max-width:800px){
+    .gallery .image{
+        width: calc(100% / 2);
+    }
+}
+// @media(min-width:700px){
+//    nav .items{
+//        max-width: 600px;
+//        }
+//    nav .items .item{
+//        padding: 7px 15px;
+//    }
+// }
+@media(max-width:600px){
+//    nav .items{
+//        flex-wrap: wrap;
+//        justify-content: center;
+//        border: 6px solid rgb(255, 72, 231);
+//        background: #000;
+//    }
+//    nav .items .item{
+//        padding: 5px;
+//    }
+   .gallery .image{
+       width: 100%;
+   }
+}
 
-    }
-    .recentProjet__images{
-        img{
-            width: 350px;
-            height: 350px;
-            margin: -5px;
-            transition: all .2s ease;
-            -webkit-transition: all .2s ease;
-            -moz-transition: all .2s ease;
-            -ms-transition: all .2s ease;
-            -o-transition: all .2s ease;
-            
+
+
+
+.image:hover .gallery__hover{
+   opacity: 1;
+   transform: translateX(0);
+   -webkit-transform: translateX(0);
+   -moz-transform: translateX(0);
+   -ms-transform: translateX(0);
+   -o-transform: translateX(0);
+   color: #fff;
+   z-index: 3;
+}
+.gallery__hover{
+   position: absolute;
+   top: 70px;
+   z-index: 3;
+   color: #fff;
+   opacity: 0;
+   transform: translateY(20px);
+   -webkit-transform: translateY(20px);
+   -moz-transform: translateY(20px);
+   -ms-transform: translateY(20px);
+   -o-transform: translateY(20px);
+   transition: 0.5s;
+   -webkit-transition: 0.5s;
+   -moz-transition: 0.5s;
+   -ms-transition: 0.5s;
+   -o-transition: 0.5s;
+   margin: 0;
+   left: 10px;
+    h3{
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 30px;
+
+        &:hover{
+            color: $color--primary-yellow;
         }
     }
-    
-}
-
-/* filter css*/
-
-#commercial:checked ~ .recentProjet__images > img:not([class *="commercial"]),
-#education:checked ~ .recentProjet__images > img:not([class *="education"]),
-#Gouvernment:checked ~ .recentProjet__images > img:not([class *="Gouvernment"]),
-#infrastructure:checked ~ .recentProjet__images > img:not([class *="infrastructure"]),
-#residential:checked ~ .recentProjet__images > img:not([class *="residential"]),
-#healtcare:checked ~ .recentProjet__images > img:not([class *="healtcare"]){
-    width: 0px;
-    height: 0px;
-}
-
-
-#all:checked ~ .recentProjet__label .all,
-#commercial:checked ~ .recentProjet__label .commercial,
-#education:checked ~ .recentProjet__label .education,
-#Gouvernment:checked ~ .recentProjet__label .Gouvernment,
-#infrastructure:checked ~ .recentProjet__label .infrastructure,
-#residential:checked ~ .recentProjet__label .residential,
-#healtcare:checked ~ .recentProjet__label .healtcare{
-    background-color: $color--primary-yellow;
-    color:$color--text-dark;  
+    .btn{
+        background-color: $color--primary-yellow;
+        padding: 10px;
+        font-size: .9rem;
+        font-weight: 200;
+        color: black;
+    }
 
 }
+.recentProjet__btn{
+    text-align: center;
+    a{
+        outline: 0;
+        text-decoration: none;
+        color: #fff;
+        padding: 5px;
+        font-weight: 600;
+
+    }
+}
+
+
+
+// --------------------------------
+  // Teste pour le responsive
+  .header{
+    border: 3px solid yellow;
+  }
+  .aboutUs{
+    border: 3px solid grey;
+  }
+  .skillTest{
+    border: 3px solid orange;
+  }
+  .OurServices{
+    border: 3px solid purple;
+  }
+  .recentProjet{
+    border: 3px solid rgb(0, 30, 128);
+  }

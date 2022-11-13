@@ -1,7 +1,14 @@
 body{
     font-family: "Montserrat", sans-serif;
     font-size: $default-font-size;
+    border: 2px solid red;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 h2{
     @include h2;
+}
+html{
+    @include border(green);
 }
