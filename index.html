@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,7 +18,7 @@
         <div class="container-fluid header__sociallink p-2 ">
             <div class="container ">
                 <div class="row">
-                    <div class="col-12 col-xl-8 text-center">
+                    <div class="col-12 col-xl-8">
                         <a href=""><i class="fa-solid fa-location-dot"></i> 9051 Constra Incorporated, États-Unis</a>
                     </div>
                     <div class="col-12 col-xl-4 text-center text-xl-end ">
@@ -31,7 +32,7 @@
         </div>
         <div class="container mt-5 mb-4">
             <div class="row">
-                <div class="col-12 col-xl-4 mb-4 header__logo text-center">
+                <div class="col-12 col-xl-4 mb-4 header__logo">
                     <a href="#"><img src="./images/logo.png" alt="Logo Constra"></a>
                 </div>
                 <div class="col-sm-3 col-xl-2 text-center">
@@ -215,8 +216,8 @@
         </div>
     </header>
 
-    <section class="mt-5 position-relative aboutUs">
-        <div class="container mt-5">
+    <section class="mt-5 mb-5 position-relative aboutUs">
+        <div class="container mt-5 ">
             <div class="row pt-5">
                 <div class="col-12 col-lg-6">
                     <p>À PROPOS DE NOUS</p>
@@ -238,7 +239,7 @@
                             <i class="fa-solid fa-thumbs-up"></i>
                             <p>GUIDÉ PAR L'ENGAGEMENT</p>
                         </div>
-                        <div class="col-12 col-lg-6  aboutUs__group">
+                        <div class="col-12 col-lg-6 mb-2 aboutUs__group">
                             <i class="fa-solid fa-people-group"></i>
                             <p>UNE ÉQUIPE DE PROFESSIONNELS</p>
                         </div>
@@ -249,52 +250,62 @@
                     <p>Esthétique de scène de lune de loup Minim Austin 3, amers umami odio pariatur. Pop-up occaecat
                         taxidermie street art, barbe tatouée littéralement.
                     </p>
-                    <div class="accordion accordion-flush" id="accordionFlushExample">
-                        <div class="accordion-item mb-2">
-                            <h2 class="accordion-header" id="flush-headingOne">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Accordion Item #1
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the first item's accordion body.</strong> It is shown by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                    aria-controls="flush-collapseOne">
-                                    SECURITE
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Accordion Item #2
                                 </button>
                             </h2>
-                            <div id="flush-collapseOne" class="accordion-collapse collapse"
-                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                                    demonstrate the <code>.accordion-flush</code> class. This is the first item's
-                                    accordion body.</div>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the second item's accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
                             </div>
                         </div>
-                        <div class="accordion-item mb-2">
-                            <h2 class="accordion-header" id="flush-headingTwo">
-                                <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                                    aria-controls="flush-collapseTwo">
-                                    SERVICE CLIENT
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Accordion Item #3
                                 </button>
                             </h2>
-                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                                    demonstrate the <code>.accordion-flush</code> class. This is the second item's
-                                    accordion body. Let's imagine this being filled with some actual content.</div>
-                            </div>
-                        </div>
-                        <div class="accordion-item mb-2">
-                            <h2 class="accordion-header " id="flush-headingThree">
-                                <button class="accordion-button collapsed test" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
-                                    aria-controls="flush-collapseThree">
-                                    INTEGRITE
-                                </button>
-                            </h2>
-                            <div id="flush-collapseThree" class="accordion-collapse collapse"
-                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                                    demonstrate the <code>.accordion-flush</code> class. This is the third item's
-                                    accordion body. Nothing more exciting happening here in terms of content, but just
-                                    filling up the space to make it look, at least at first glance, a bit more
-                                    representative of how this would look in a real-world application.</div>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -307,30 +318,30 @@
         <div class="container-fluid bg-dark  skillTest">
             <div class="container">
                 <div class="row skill p-5">
-                    <div class="col-12 col-lg-3 mb-2">
+                    <div class="col-12 col-lg-3 mb-5">
                         <div class="skill__container">
-                            <i class="fa-solid fa-trophy"></i>
-                            <span class="skill__num" data-val="889">0000</span>
+                            <img src="./images/icon-image/fact1.png" alt="">
+                            <span class="skill__num" data-val="1789">0000</span>
                             <span class="skill__text">PROJETS TOTAUX</span>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-3 mb-2">
+                    <div class="col-12 col-lg-3 mb-5">
                         <div class="skill__container">
-                            <i class="fa-solid fa-trophy"></i>
+                            <img src="./images/icon-image/fact2.png">
                             <span class="skill__num" data-val="647">000</span>
                             <span class="skill__text">MEMBRES DU PERSONNEL</span>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-3 mb-2">
+                    <div class="col-12 col-lg-3 mb-5">
                         <div class="skill__container">
-                            <i class="fa-solid fa-trophy"></i>
-                            <span class="skill__num" data-val="400">000</span>
+                            <img src="./images/icon-image/fact3.png">
+                            <span class="skill__num" data-val="2000">000</span>
                             <span class="skill__text">HEURES DE TRAVAIL</span>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-3 mb-2">
+                    <div class="col-12 col-lg-3 mb-5">
                         <div class="skill__container">
-                            <i class="fa-solid fa-trophy"></i>
+                            <img src="./images/icon-image/fact4.png">
                             <span class="skill__num" data-val="44">000</span>
                             <span class="skill__text">EXPÉRIENCE DES PAYS</span>
                         </div>
@@ -342,7 +353,7 @@
 
     <!-- -------------------------------------- -->
     <section>
-        <div class="container mt-5 OurServices ">
+        <div class="container mt-5  OurServices ">
             <div class="row">
                 <div class="col-12">
                     <p class="text-center mb-2">NOUS SOMMES DES SPÉCIALISTES EN</p>
@@ -351,7 +362,7 @@
                 <div class="col-12 col-xl-4 mt-5 text-start">
                     <div class="row">
                         <div class="OurServices__group mb-5">
-                            <i class="fa-solid fa-trophy"></i>
+                            <img src="./images/icon-image/service-icon1.png">
                             <div>
                                 <h3>CONSTRUCTION DE MAISON</h3>
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis ratione facilis
@@ -359,7 +370,7 @@
                             </div>
                         </div>
                         <div class="OurServices__group mb-5">
-                            <i class="fa-solid fa-trophy"></i>
+                            <img src="./images/icon-image/service-icon2.png">
                             <div>
                                 <h3>RÉNOVATIONS DE BÂTIMENTS</h3>
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis ratione facilis
@@ -367,7 +378,7 @@
                             </div>
                         </div>
                         <div class="OurServices__group mb-5">
-                            <i class="fa-solid fa-trophy"></i>
+                            <img src="./images/icon-image/service-icon3.png">
                             <div>
                                 <h3>DESIGN D'INTÉRIEUR</h3>
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis ratione facilis
@@ -382,25 +393,25 @@
                 <div class="col-12 col-xl-4 mt-5 text-start">
                     <div class="row">
                         <div class="OurServices__group mb-5">
-                            <i class="fa-solid fa-trophy"></i>
+                            <img src="./images/icon-image/service-icon4.png">
                             <div>
-                                <h3>CONSTRUCTION DE MAISON</h3>
+                                <h3> design extérieur</h3>
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis ratione facilis
                                     hic!</p>
                             </div>
                         </div>
                         <div class="OurServices__group mb-5">
-                            <i class="fa-solid fa-trophy"></i>
+                            <img src="./images/icon-image/service-icon5.png">
                             <div>
-                                <h3>RÉNOVATIONS DE BÂTIMENTS</h3>
+                                <h3>RÉNOVATION</h3>
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis ratione facilis
                                     hic!</p>
                             </div>
                         </div>
-                        <div class="OurServices__group mb-5">
-                            <i class="fa-solid fa-trophy"></i>
+                        <div class="OurServices__group">
+                            <img src="./images/icon-image/service-icon6.png">
                             <div>
-                                <h3>DESIGN D'INTÉRIEUR</h3>
+                                <h3>gestion de la sécurité</h3>
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis ratione facilis
                                     hic!</p>
                             </div>
@@ -415,87 +426,97 @@
 
     <!-- ---------------Recent projet--------- -->
     <section>
-        <div class="recentProjet">
-            <nav>
-                <div class="items ">
-                    <span class="item active" data-name="all">TOUT VOIR</span>
-                    <span class="item" data-name="commercial">COMMERCIAL</span>
-                    <span class="item" data-name="education">EDUCATION</span>
-                    <span class="item" data-name="government">GOUVERNEMENT</span>
-                    <span class="item" data-name="infrastructure">INFRASTRUCTURE</span>
-                    <span class="item" data-name="residential">RESIDENTIEL</span>
-                    <span class="item" data-name="healthcare">SANTÉ</span>
-                </div>
-            </nav>
+        <div class="container-fluid bg-light p-4">
+            <div class="recentProjet">
+                <nav>
+                    <div class="items ">
+                        <span class="item active" data-name="all">TOUT VOIR</span>
+                        <span class="item" data-name="commercial">COMMERCIAL</span>
+                        <span class="item" data-name="education">EDUCATION</span>
+                        <span class="item" data-name="government">GOUVERNEMENT</span>
+                        <span class="item" data-name="infrastructure">INFRASTRUCTURE</span>
+                        <span class="item" data-name="residential">RESIDENTIEL</span>
+                        <span class="item" data-name="healthcare">SANTÉ</span>
+                    </div>
+                </nav>
 
-            <!-- -------Filter images------ -->
-            <div class="gallery">
-                <div class="image" data-name="commercial">
-                    <span>
-                        <img src="./images/projects/project1.jpg" alt="">
-                    </span>
-                    <div class="gallery__hover">
-                        <h3>IMMEUBLE CAPITAL TELTWAY</h3>
-                        <button class="btn">COMMERCIAL, INTÉRIEURS</button>
+                <!-- -------Filter images------ -->
+                <div class="gallery">
+                    <div class="image" data-name="commercial">
+                        <span>
+                            <img src="./images/projects/project1.jpg" alt="">
+                        </span>
+                        <div class="gallery__hover">
+                            <h3>IMMEUBLE CAPITAL TELTWAY</h3>
+                            <button class="btn">COMMERCIAL, INTÉRIEURS</button>
+                        </div>
                     </div>
-                </div>
-                <div class="image" data-name="education">
-                    <span>
-                        <img src="./images/projects/project2.jpg" alt="">
-                    </span>
-                    <div class="gallery__hover">
-                        <h3>HÔPITAL GHUM TOUCH</h3>
-                        <button class="btn">SOINS DE SANTÉ</button>
+                    <div class="image" data-name="education">
+                        <span>
+                            <img src="./images/projects/project2.jpg" alt="">
+                        </span>
+                        <div class="gallery__hover">
+                            <h3>HÔPITAL GHUM TOUCH</h3>
+                            <button class="btn">SOINS DE SANTÉ</button>
+                        </div>
                     </div>
+
+                    <div class="image" data-name="government">
+                        <span><img src="./images/projects/project3.jpg" alt=""></span>
+                        <div class="gallery__hover">
+                            <h3>INSTALLATION TNT EST</h3>
+                            <button class="btn">GOUVERNEMENT</button>
+                        </div>
+                    </div>
+                    <div class="image" data-name="infrastructure">
+                        <span><img src="./images/projects/project4.jpg" alt=""></span>
+                        <div class="gallery__hover">
+                            <h3>QUARTIER GÉNÉRAL DE NARRIOT</h3>
+                            <button class="btn">INFRASTRUCTURE</button>
+                        </div>
+                    </div>
+                    <div class="image" data-name="residential">
+                        <span><img src="./images/projects/project5.jpg" alt=""></span>
+                        <div class="gallery__hover">
+                            <h3>MÉTRO DE KALAS</h3>
+                            <button class="btn">INFRASTRUCTURE</button>
+                        </div>
+                    </div>
+                    <div class="image" data-name="healthcare"><span><img src="./images/projects/project6.jpg"
+                                alt=""></span>
+                        <div class="gallery__hover">
+                            <h3>MAISON DE L'AVENUE ANCRAFT</h3>
+                            <button class="btn">RÉSIDENTIEL</button>
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class="image" data-name="government">
-                    <span><img src="./images/projects/project3.jpg" alt=""></span>
-                    <div class="gallery__hover">
-                        <h3>INSTALLATION TNT EST</h3>
-                        <button class="btn">GOUVERNEMENT</button>
+                <!-- fullscreen image preview box -->
+                <div class="preview-box">
+                    <div class="details">
+                        <span class="title">Service : <p>Not defined</p></span>
+                        <span class="icon fas fa-times"></span>
+                    </div>
+                    <div class="image-box">
+                        <img src="./images/1.jpg" alt="">
                     </div>
                 </div>
-                <div class="image" data-name="infrastructure">
-                    <span><img src="./images/projects/project4.jpg" alt=""></span>
-                    <div class="gallery__hover">
-                        <h3>QUARTIER GÉNÉRAL DE NARRIOT</h3>
-                        <button class="btn">INFRASTRUCTURE</button>
-                    </div>
+                <div class="shadow"></div>
+                <div class="mt-5 recentProjet__btn ">
+                    <button class="btn"><a href="#">VOIR TOUS LES PROJET</a></button>
                 </div>
-                <div class="image" data-name="residential">
-                    <span><img src="./images/projects/project5.jpg" alt=""></span>
-                    <div class="gallery__hover">
-                        <h3>MÉTRO DE KALAS</h3>
-                        <button class="btn">INFRASTRUCTURE</button>
-                    </div>
-                </div>
-                <div class="image" data-name="healthcare"><span><img src="./images/projects/project6.jpg" alt=""></span>
-                    <div class="gallery__hover">
-                        <h3>MAISON DE L'AVENUE ANCRAFT</h3>
-                        <button class="btn">RÉSIDENTIEL</button>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- fullscreen image preview box -->
-            <div class="preview-box">
-                <div class="details">
-                    <span class="title">Service : <p>Not defined</p></span>
-                    <span class="icon fas fa-times"></span>
-                </div>
-                <div class="image-box">
-                    <img src="./images/1.jpg" alt="">
-                </div>
-            </div>
-            <div class="shadow"></div>
-            <div class="mt-5 recentProjet__btn ">
-                <button class="btn"><a href="#">VOIR TOUS LES PROJET</a></button>
             </div>
         </div>
     </section>
-
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-xl-6"></div>
+                <div class="col-12 col-xl-6"></div>
+            </div>
+        </div>
+    </section>
 
 
 

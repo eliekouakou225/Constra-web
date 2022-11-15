@@ -212,10 +212,9 @@ html {
   flex-direction: column;
   font-size: 16px;
 }
-.skill__container i {
-  color: #FFB600;
-  font-size: 2.5rem;
-  text-align: center;
+.skill__container img {
+  width: 5rem;
+  margin: 0 auto;
 }
 .skill__container .skill__num {
   color: #fff;
@@ -235,19 +234,21 @@ html {
   display: flex;
   flex-direction: row;
   flex-wrap: no-wrap;
+  margin-bottom: 5px;
 }
 .OurServices__group h3 {
   font-size: 1rem;
   font-weight: 600;
+  text-transform: uppercase;
 }
 .OurServices__group h3:hover {
   color: #FFB600;
   cursor: pointer;
 }
-.OurServices__group i {
-  font-size: 5rem;
-  color: #FFB600;
-  margin-right: 10px;
+.OurServices__group img {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 15px;
 }
 .OurServices__group p {
   font-weight: 300;
@@ -457,7 +458,22 @@ nav .items .item:hover {
     width: 50%;
   }
 }
+@media (max-width: 700px) {
+  nav .items {
+    max-width: 600px;
+  }
+  nav .items .item {
+    padding: 7px 15px;
+  }
+}
 @media (max-width: 600px) {
+  nav .items {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  nav .items .item {
+    padding: 5px;
+  }
   .gallery .image {
     width: 100%;
   }
